@@ -1,50 +1,37 @@
-# Welcome to your Expo app 👋
+# Inicio---RN0
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Para comenzar con el proyecto, es importante ejecutar los siguientes comandos:
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+Instalación del CLI de React Native
 ```bash
-npm run reset-project
+npm install -g react-native-cli
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Crear un Nuevo Proyecto
+```bash
+npx create-expo-app@latest
+```
 
-## Learn more
+Navegar al Directorio del Proyecto
+```bash
+cd MiProyecto
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Ejecutar la Aplicación en un Emulador o Dispositivo(En este caso utilizaremos Expo Go para Android) y lo iniciaremos con:
+```bash
+npx expo start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Debemos escaneaer el codigo QR con la aplicacion para acceder al proyecto
+Es importante saber que ante cualquier problema, podemos acceder a la documentacion oficial de expo donde nos proporcionan la solucion a cualquier error(https://docs.expo.dev/tutorial/create-your-first-app/)
 
-## Join the community
 
-Join our community of developers creating universal apps.
+Problema a Resolver:
+Crear nuestro primer proyecto en React Native con Expo
+Generar una pantalla limpia con un hola mundo y sumarle un nuevo tab con diferente estilo
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Solucion:
+Creamos en la carpeta '(tabs)' un archivo el cual sera una nueva "pestaña", iremos a 'layout' donde indicaremos la ruta de esta "pestaña" y su correspondiente icono
+Luego desarrollaremos el diseño.
+
+Es importante importar todo lo que usaremos para evitar problemas.
