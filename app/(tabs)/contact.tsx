@@ -6,7 +6,7 @@ import { ThemedView } from '@/components/ThemedView';
 import { View, Text, TouchableOpacity, TextInput, Alert } from 'react-native';
 import React, { useState } from 'react';
 
-
+//funcion para recibir el formulario, mostrar una alerta al ser enviado y limpiar la entrada
 export default function Contact() {
   const [nombre, setNombre] = useState('');
   const [correo, setCorreo] = useState('');
@@ -20,6 +20,7 @@ export default function Contact() {
     setMensaje('');
 
 };
+// muestra por pantalla un formulario de contacto
   return (
     
     <ParallaxScrollView
@@ -60,6 +61,7 @@ export default function Contact() {
   );
 }
 
+// estilo para los elementos del formulario
 const styles = StyleSheet.create({
   headerImage: {
     color: '#808080',

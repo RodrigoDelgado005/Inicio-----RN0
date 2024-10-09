@@ -6,7 +6,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 export default function TabLayout() {
   return (
     <Tabs
-      /* @tutinfo There are many <CODE>screenOptions</CODE> we can use to customize the tab bar. We're changing the active tab color here to custom value which we will also use later in our app. */
+      /* damos los estilos a la barra de navegacion */
       screenOptions={{
         tabBarActiveTintColor: '#ffd33d',
         headerStyle: {
@@ -19,7 +19,9 @@ export default function TabLayout() {
         },
       }}
     >
+
       <Tabs.Screen
+      /* definimos el estilo, icono y titulo de cada boton*/
         name="index"
         options={{
           title: 'Home',
